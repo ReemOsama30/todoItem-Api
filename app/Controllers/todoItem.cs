@@ -8,14 +8,14 @@ namespace app.Controllers
     [ApiController]
     public class todoItem : ControllerBase
     {
-        List<TodoItem> todoItems=new List<TodoItem>();
+        List<TodoItem> todoItems = new List<TodoItem>();
         public todoItem()
         {
             todoItems.Add(new TodoItem
             {
                 id = 1,
-                Name="task1"
-                ,isCompleted=true,
+                Name = "task1"
+                , isCompleted = true,
 
             });
             todoItems.Add(new TodoItem
@@ -50,6 +50,17 @@ namespace app.Controllers
         public List<TodoItem> Get()
         {
             return todoItems;
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult getById(int id)
+        {
+            TodoItem item= todoItems.FirstOrDefault(t=>t.id==id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return Ok(item);
         }
 
     }

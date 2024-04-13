@@ -30,3 +30,4 @@ D:\itimaterials\webAPI\todoItems\app\app\obj\Debug\net8.0\refint\app.dll
 D:\itimaterials\webAPI\todoItems\app\app\obj\Debug\net8.0\app.pdb
 D:\itimaterials\webAPI\todoItems\app\app\obj\Debug\net8.0\app.genruntimeconfig.cache
 D:\itimaterials\webAPI\todoItems\app\app\obj\Debug\net8.0\ref\app.dll
+D:\itimaterials\webAPI\todoItems\app\app\obj\Debug\net8.0\app.sourcelink.json
