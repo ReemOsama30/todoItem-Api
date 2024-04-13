@@ -69,5 +69,31 @@ namespace app.Controllers
 
             return CreatedAtAction(nameof(getById), new { id = item.id }, item);
         }
+        [HttpPut("{id}")]
+
+        public IActionResult put(int id,TodoItem updateditem) {
+
+            TodoItem item = todoItems.FirstOrDefault(t => t.id == id);
+            if(item == null)
+            {
+                return NotFound();
+            }
+
+            foreach(var todoItem in todoItems)
+            {
+                if(todoItem.id == id)
+                {
+                    todoItem.Name = updateditem.Name;
+                    todoItem.isCompleted=updateditem.isCompleted;   
+                    todoItem.isdeleted=updateditem.isdeleted;
+                }
+
+            }
+            return NoContent();
+
+
+        }
+
+
     }
 }
