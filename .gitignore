@@ -1,2 +1,55 @@
-# Ignore Visual Studio Code Index files
+
+
+
+# Visual Studio / Rider / JetBrains Rider
 .vs/
+/.idea/
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+AnyCPU/
+*.dbmdl
+*.pdb
+*.ipch
+*.cache
+*.ilk
+*.msi
+*.log
+*.bin
+*.obj
+*.exe
+*.dll
+*.manifest
+*.vsix
+*.vsct
+*.bak
+*.nupkg
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# Windows Installer Files
+*.wixobj
+*.wixpdb
+*.wixloc
+*.wixil
+
+# Click-Once deployment
+publish/
+
+# Publish Web Output
+*.publish.xml
+*.pubxml
