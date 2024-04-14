@@ -94,6 +94,17 @@ namespace app.Controllers
 
         }
 
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            TodoItem item =todoItems.Find(t => t.id == id);
+            if( item == null)
+            {
+                return NotFound();
+            }
+            todoItems.Remove(item);
+            return NoContent();
+        }
 
     }
 }
